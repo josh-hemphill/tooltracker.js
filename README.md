@@ -1,2 +1,4 @@
 # tooltracker.js
-A Vue/Ionic based tracker for anything gremlins keep walking off with.
+A full-stack tracker app for anything gremlins keep walking off with.
+
+Using Typescript, Vue, Vuetify, Node.js, MongoDB, & Express.js as major components.
