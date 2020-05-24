@@ -1,0 +1,26 @@
+{
+  "defaultSeverity": "warning",
+  "extends": ["tslint:recommended"],
+  "rules": {
+    "indent": [true, "tabs", 4],
+    "interface-name": false,
+    "no-consecutive-blank-lines": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "quotemark": [true, "single"],
+    "eofline": true,
+    "linebreak-style": [true, "lf"],
+    "semicolon": [true, "always"],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": {
+          "objects": "always",
+          "arrays": "always",
+          "typeLiterals": "ignore"
+        },
+        "esSpecCompliant": true
+      }
+    ]
+  }
+}
