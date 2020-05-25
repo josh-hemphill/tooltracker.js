@@ -1,4 +1,5 @@
 import { RouteRecordRaw, createRouter, createWebHistory } from 'vue-router';
+import { defineAsyncComponent } from 'vue';
 import Home from '../views/Home.vue';
 
 const routes: RouteRecordRaw[] = [
@@ -13,7 +14,7 @@ const routes: RouteRecordRaw[] = [
 		// route level code-splitting
 		// this generates a separate chunk (about.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
-		component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+		component: defineAsyncComponent(() => import(/* webpackChunkName: "about" */ '../views/About.vue')),
 	},
 ];
 
