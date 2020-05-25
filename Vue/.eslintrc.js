@@ -16,7 +16,8 @@ module.exports = {
 		'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
 		'indent': ['warn', 'tab'],
 		'no-tabs': ['warn',{allowIndentationTabs: true}],
-		'comma-dangle': ['warn', 'always-multiline']
+		'comma-dangle': ['warn', 'always-multiline'],
+		"space-before-function-paren": ["warn", "always"],
 	},
 	overrides: [
 		{

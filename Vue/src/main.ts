@@ -1,11 +1,15 @@
-import Vue from 'vue';
+import {
+	createApp,
+} from 'vue';
 import App from './App.vue';
 import './registerServiceWorker';
 import router from './router';
 
-Vue.config.productionTip = false;
+const app = createApp(App);
 
-new Vue({
-	router,
-	render: (h: any) => h(App),
-}).$mount('#app');
+app.use(router);
+
+router.isReady()
+	.then(() => {
+		app.mount('#app');
+	}).catch((err) => console.log(err));
