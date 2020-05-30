@@ -53,7 +53,8 @@
 		"ter-indent": [
 			true,
 			"tab"
-		]
+		],
+		"space-before-function-paren": false
 	},
 	"jsRules": {
 		"max-line-length": {
